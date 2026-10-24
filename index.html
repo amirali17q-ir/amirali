@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="وب‌سایت شخصی امیرعلی؛ برنامه‌نویسی، طراحی وب، پروژه‌های روبیکا، گیمینگ و موسیقی.">
+  <title>AMIR-ALI-WEB | دنیای امیرعلی</title>
+  <link rel="stylesheet" href="files/style.css">
+</head>
+<body>
+  <video class="background-video" id="backgroundVideo" loop playsinline preload="none" aria-hidden="true"></video>
+  <div class="video-shade" id="videoShade"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <div class="entry-modal" id="entryModal" role="dialog" aria-modal="true" aria-labelledby="entryTitle">
+    <div class="entry-box">
+      <div class="entry-mark">&lt;/&gt;</div>
+      <p class="eyebrow">CHOOSE YOUR EXPERIENCE</p>
+      <h2 id="entryTitle">چطور وارد دنیای من می‌شی؟</h2>
+      <p class="entry-description">حالت دلخواهت رو انتخاب کن. هر وقت خواستی می‌تونی ویدیو و صداش رو از کنترل پایین صفحه خاموش یا روشن کنی.</p>
+      <div class="entry-options">
+        <button class="entry-option video-choice" id="withVideo">
+          <span class="entry-option-icon">▶</span>
+          <b>با بکگراند ویدیویی</b>
+          <small>ویدیو با صدای خودش پخش می‌شه</small><em class="rec">پیشنهاد من</em>
+        </button>
+        <button class="entry-option" id="withoutVideo">
+          <span class="entry-option-icon">◈</span>
+          <b>بدون ویدیو</b>
+          <small>پس‌زمینه ساده، بدون ویدیو و بدون صدا</small>
+        </button>
+      </div>
+      <p class="entry-hint">✨ برای گرفتن حس بهتر، ویدیو رو بزن</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="صفحه اصلی">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span><strong>AMIR<span>-ALI</span></strong><small>PERSONAL DIGITAL SPACE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#home">خانه</a>
+      <a class="nav-link" href="#about">درباره من</a>
+      <a class="nav-link" href="#projects">پروژه‌ها</a>
+      <a class="nav-link" href="#interests">علاقه‌مندی‌ها</a>
+      <a class="nav-link" href="#contact">ارتباط</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" title="تغییر تم">◐ <span>تم</span></button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="status-line"><span class="status-dot"></span> خوش اومدی به دنیای من</div>
+        <p class="eyebrow">HELLO, I'M AMIRALI</p>
+        <h1>ایده‌ها رو تبدیل می‌کنم به<br><span class="gradient-text">چیزهایی که کار می‌کنن.</span></h1>
+        <p class="hero-description">
+          من امیرعلی‌ام؛ علاقه‌مند به برنامه‌نویسی، طراحی سایت، پایتون، زبان C
+          و ساخت ابزارها و ربات‌های کاربردی. اینجا گوشه‌ای از کارها و علاقه‌مندی‌های منه.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">دیدن پروژه‌ها <span>↙</span></a>
+          <a class="button button-quiet" href="#about">بیشتر درباره من</a>
+        </div>
+        <div class="skill-tags"><span>Python</span><span><bdi>C / C++</bdi></span><span>HTML • CSS • JS</span><span>Rubika Bots</span></div>
+      </div>
+      <div class="hero-visual" aria-label="تصویر گرافیکی برنامه‌نویسی">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="code-window">
+          <div class="window-bar"><i></i><i></i><i></i><span>amirali.py</span></div>
+          <pre><b>class</b> AmirAli:
+    <b>def</b> __init__(self):
+        self.name = <em>"AmirAli"</em>
+        self.focus = [
+            <em>"Programming"</em>,
+            <em>"Web Design"</em>,
+            <em>"Creative Ideas"</em>
+        ]
+
+    <b>def</b> build(self, idea):
+        <b>return</b> idea + <em>" + passion"</em></pre>
+          <div class="terminal-footer"><span>●</span> READY TO CREATE <span class="cursor">_</span></div>
+        </div>
+        <div class="floating-chip chip-one">⌘ Python</div>
+        <div class="floating-chip chip-two">✦ Creative mind</div>
+      </div>
+      <a class="scroll-hint" href="#about">اسکرول کن <span>↓</span></a>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading"><div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>پشت این صفحه، <span>منم.</span></h2></div><span class="heading-index">01 / ABOUT</span></div>
+      <div class="about-grid">
+        <article class="about-card about-main">
+          <div class="about-icon">✦</div>
+          <h3>امیرعلی کیه؟</h3>
+          <p>من امیرعلی‌ام؛ علاقه‌مند به دنیای کامپیوتر و برنامه‌نویسی، از Python و <bdi>C/C++</bdi> گرفته تا طراحی وب و ساخت پروژه‌های شخصی. همیشه دوست دارم چیزهای جدید یاد بگیرم، ایده‌هام رو به واقعیت تبدیل کنم و چیزهایی بسازم که یه اثر از خودم توشون باشه.</p>
+          <p>کنار برنامه‌نویسی، به نوشته‌ها، موسیقی، عکاسی و خاطراتی که برام معنا دارن هم علاقه دارم. این سایت فقط مجموعه‌ای از پروژه‌ها نیست؛ گوشه‌ای از دنیای منه، از چیزهایی که دوست دارم تا لحظه‌ها و بخش‌هایی از زندگی‌م که می‌خوام اینجا نگهشون دارم.</p>
+          <div class="signature">— امیرعلی</div>
+        </article>
+        <article class="mini-info"><span class="mini-symbol">⌨</span><h3>کدنویسی</h3><p>پایتون، C/C++ و طراحی وب</p></article>
+        <article class="mini-info"><span class="mini-symbol">🤖</span><h3>پروژه‌های شخصی</h3><p>ربات‌ها و ابزارهایی که واقعاً کار می‌کنن، مخصوصاً در روبیکا</p></article>
+        <article class="mini-info"><span class="mini-symbol">🎧</span><h3>حال‌وهوای من</h3><p>موسیقی، شعر، گیم و ایده‌های متفاوت</p></article>
+        <article class="mini-info"><span class="mini-symbol">✎</span><h3>نوشته، عکس و خاطره</h3><p>چیزهایی که برام معنا دارن و دوست دارم نگهشون دارم</p></article>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="projects">
+      <div class="section-heading"><div><p class="eyebrow">THINGS I'VE BUILT / I LOVE</p><h2>بخش‌های <span>دنیای من</span></h2></div><span class="heading-index">02 / EXPLORE</span></div>
+      <p class="section-intro">هر بخش یه حال‌وهوای خودش رو داره؛ یکی برای دیدن، یکی برای خوندن و یکی فقط برای وقت‌گذرونی.</p>
+      <div class="project-grid">
+        <a class="project-card card-red" href="pages/friends.html"><div class="project-top"><span class="project-icon">✦</span><span class="project-arrow">↗</span></div><p class="card-label">REMEMBRANCE</p><h3>به یاد دوستانم</h3><p>جایی برای اسم کسایی که دیگه کنارم نیستن، ولی هنوز تو دلمن.</p><span class="card-link">دیدن صفحه <b>←</b></span></a>
+        <a class="project-card card-blue" href="pages/gallery.html"><div class="project-top"><span class="project-icon">▧</span><span class="project-arrow">↗</span></div><p class="card-label">VISUAL ARCHIVE</p><h3>گالری</h3><p>تصویرها و چیزهایی که ارزش نگه داشتن و دوباره دیدن دارن.</p><span class="card-link">دیدن گالری <b>←</b></span></a>
+        <a class="project-card card-purple" href="pages/mood.html"><div class="project-top"><span class="project-icon">☾</span><span class="project-arrow">↗</span></div><p class="card-label">MOOD ROOM</p><h3>اتاق حال‌وهوا</h3><p>یه گوشه‌ی تاریک و آروم، با عکس‌ها و جمله‌هایی که حسشون رو دوست دارم.</p><span class="card-link">ورود به اتاق <b>←</b></span></a>
+        <a class="project-card card-green" href="pages/bio.html"><div class="project-top"><span class="project-icon">⌁</span><span class="project-arrow">↗</span></div><p class="card-label">THE PERSON BEHIND</p><h3>بیوگرافی</h3><p>یه معرفی بیشتر از من، مسیرم و چیزهایی که دوست دارم بسازم.</p><span class="card-link">بیشتر بخون <b>←</b></span></a>
+        <a class="project-card card-orange game-card" href="pages/game.html"><div class="project-top"><span class="project-icon">🎮</span><span class="project-arrow">↗</span></div><p class="card-label">PLAY MODE</p><h3>Game Zone</h3><p>یه استراحت کوتاه بین کد زدن‌ها؛ وقتشه یه کم بازی کنیم.</p><span class="card-link">بزن بریم <b>←</b></span></a>
+        <article class="project-card card-neutral"><div class="project-top"><span class="project-icon">⌘</span><span class="project-arrow">+</span></div><p class="card-label">COMING SOON</p><h3>پروژه‌های آینده</h3><p>چند تا ایده در حال ساخته شدنه؛ به‌زودی اینجا اضافه می‌شن.</p><span class="card-link">به‌زودی...</span></article>
+      </div>
+    </section>
+
+    <section class="section-wrap interests-section" id="interests">
+      <div class="section-heading"><div><p class="eyebrow">MY TOOLBOX</p><h2>چیزهایی که باهاشون <span>می‌سازم</span></h2></div><span class="heading-index">03 / SKILLS</span></div>
+      <div class="toolbox">
+        <div class="tool-row"><div class="tool-icon py">Py</div><div class="tool-text"><h3>Python</h3><p>برای ساخت ابزار، اتوماسیون و ربات‌های شخصی</p></div><span class="tool-tag">PROGRAMMING</span></div>
+        <div class="tool-row"><div class="tool-icon c-lang">C</div><div class="tool-text"><h3><bdi>C / C++</bdi></h3><p>برای یادگیری منطق و اصول پایه‌ای برنامه‌نویسی</p></div><span class="tool-tag">LOW LEVEL</span></div>
+        <div class="tool-row"><div class="tool-icon web">⌘</div><div class="tool-text"><h3>HTML / CSS / JS</h3><p>برای ساخت صفحه‌هایی با ظاهر و حس مخصوص خودم</p></div><span class="tool-tag">WEB DESIGN</span></div>
+        <div class="tool-row"><div class="tool-icon bot">🤖</div><div class="tool-text"><h3>Rubika Bots</h3><p>تجربه کار روی ربات‌ها و پروژه‌های کاربردی روبیکا</p></div><span class="tool-tag">SIDE PROJECTS</span></div>
+      </div>
+      <div class="quote-card"><span class="quote-mark">“</span><p>پروژه یه اثر هنریه که با عشق ساخته می‌شه.</p><small>یه جمله ساده، برای یادآوری دلیل شروع کردن.</small></div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-card">
+        <div><p class="eyebrow">LET'S CONNECT</p><h2>ارتباط؟ <span>از اینجا.</span></h2><p>اگه خواستی سر بزنی، حرف بزنی یا کارهام رو دنبال کنی، این راه‌ها در دسترست هستن.</p></div>
+        <div class="social-list">
+          <a class="social-link" href="https://rubika.ir/Amir_ali_17q" target="_blank" rel="noopener noreferrer"><span class="social-icon">R</span><span><b>روبیکا</b><small>پروفایل من در روبیکا</small></span><i>↗</i></a>
+          <a class="social-link" href="https://t.me/Amir_ali_17q" target="_blank" rel="noopener noreferrer"><span class="social-icon telegram-icon">➤</span><span><b>تلگرام</b><small>@Amir_ali_17q</small></span><i>↗</i></a>
+          <a class="social-link" href="https://rubika.ir/joinc/DJFCIIGE0KZDXBOXFAQZMJPBWTKMSUYC" target="_blank" rel="noopener noreferrer"><span class="social-icon channel-icon">✦</span><span><b>کانال روبیکا</b><small>رفتن به کانال</small></span><i>↗</i></a>
+          <button class="social-link copy-id" id="copyId"><span class="social-icon">＠</span><span><b>آیدی من</b><small>@amir_ali_17q</small></span><i>کپی</i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span><strong>AMIR<span>-ALI</span></strong><small>MADE WITH CURIOSITY</small></span></a>
+    <p>با کد، کمی خلاقیت و کلی ایده ساخته شده. © <span id="year"></span> امیرعلی</p>
+    <a href="#home" class="back-top">برگشت به بالا ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="music-dock" id="dock">
+    <button class="dock-btn" id="videoBtn" title="روشن کردن ویدیو" aria-label="روشن یا خاموش کردن ویدیو" aria-pressed="false">🎬</button>
+    <button class="dock-btn" id="soundBtn" title="صدا" aria-label="روشن یا خاموش کردن صدا" disabled>🔊</button>
+    <span><b>ویدیوی پس‌زمینه</b><small id="videoStatus">خاموش · برای روشن کردن بزن</small></span>
+  </div>
+  <script src="files/script.js"></script>
+</body>
+</html>

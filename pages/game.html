@@ -1,0 +1,11 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>بازی | AMIR-ALI-WEB</title><link rel="stylesheet" href="../files/pages.css"><style>.tabs{display:flex;gap:10px;margin-bottom:18px}.pick{display:flex;gap:12px;justify-content:center;margin:18px 0}
+.pick button{font-size:34px;width:78px;height:78px;border-radius:16px;border:1px solid var(--line);background:#111729;cursor:pointer}
+.pick button:hover{border-color:var(--red)}.res{text-align:center;font-size:18px;min-height:34px;font-weight:700}
+.score{display:flex;justify-content:center;gap:22px;color:var(--muted);font-size:14px;margin-top:10px}
+.g{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:16px 0}.g input{width:130px;text-align:center;font:inherit;background:#111729;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px}
+.win{color:var(--green)}.lose{color:var(--red)}[hidden]{display:none!important}</style></head><body><div class="wrap"><div class="top"><a class="back" href="../index.html">← خانه</a></div><h1>Game Zone</h1><p class="sub">یه استراحت کوتاه بین کد زدن‌ها. یکی رو انتخاب کن.</p>
+<div class="tabs"><button class="btn on" id="t1">سنگ کاغذ قیچی</button><button class="btn" id="t2">حدس عدد</button></div>
+<section class="card" id="g1"><div class="res" id="r1">انتخابت رو بزن</div><div class="pick"><button data-p="0" aria-label="سنگ">✊</button><button data-p="1" aria-label="کاغذ">✋</button><button data-p="2" aria-label="قیچی">✌️</button></div>
+<div class="score"><span>برد: <b id="w">0</b></span><span>مساوی: <b id="d">0</b></span><span>باخت: <b id="l">0</b></span></div></section>
+<section class="card" id="g2" hidden><div class="res" id="r2"></div><div class="g"><input type="number" id="num" min="1" max="100" inputmode="numeric" aria-label="عدد"><button class="btn on" id="go">حدس بزن</button><button class="btn" id="again">بازی جدید</button></div>
+<div class="score"><span>فرصت باقی‌مانده: <b id="left">7</b></span></div></section></div><script src="../files/game.js"></script></body></html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#04060c">
+<title>اتاق حال‌وهوا | AMIR-ALI-WEB</title>
+<link rel="stylesheet" href="../files/pages.css">
+<link rel="stylesheet" href="../files/mood.css">
+</head>
+<body class="mood">
+  <div class="bg" id="bgA"></div>
+  <div class="bg" id="bgB"></div>
+  <div class="tint"></div>
+  <div class="shade"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <header class="bar">
+    <a class="back" href="../index.html">← خانه</a>
+    <nav class="moods" id="moods" aria-label="حال‌وهوا"></nav>
+    <span class="spacer"></span>
+  </header>
+
+  <main class="stage" id="stage" aria-live="polite">
+    <blockquote class="q" id="q"><p id="qt"></p><cite id="qa"></cite></blockquote>
+  </main>
+
+  <p class="hint">بزن یا ← → برای جمله‌ی بعدی · فاصله برای توقف · ۱ ۲ ۳ برای تغییر حال</p>
+  <div class="ctl">
+    <button class="btn" id="prev" aria-label="قبلی">→</button>
+    <button class="btn" id="pp" aria-label="توقف یا ادامه">Ⅱ</button>
+    <button class="btn" id="next" aria-label="بعدی">←</button>
+  </div>
+
+  <span id="moodName" hidden></span>
+  <script src="../files/mood-data.js"></script>
+  <script src="../files/mood.js"></script>
+</body>
+</html>

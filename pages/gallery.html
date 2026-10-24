@@ -1,0 +1,25 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>گالری | AMIR-ALI-WEB</title><link rel="stylesheet" href="../files/pages.css"><style>.grid{columns:3 220px;column-gap:14px}
+.it{break-inside:avoid;margin-bottom:14px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel);cursor:zoom-in;padding:0;display:block;width:100%}
+.it img{width:100%;display:block;transition:transform .35s}.it:hover img{transform:scale(1.04)}.it:hover{border-color:var(--red)}
+.lb{position:fixed;inset:0;z-index:99;background:#05070dee;display:none;align-items:center;justify-content:center;flex-direction:column;gap:14px;padding:16px}
+.lb.on{display:flex}.lb img{max-width:94vw;max-height:78vh;border-radius:12px}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center}.bar small{color:var(--muted)}</style></head><body><div class="wrap"><div class="top"><a class="back" href="../index.html">← خانه</a></div><h1>گالری</h1><p class="sub">روی هر عکس بزن تا بزرگ بشه. توی نمایش بزرگ می‌تونی دانلودش کنی.</p><div class="grid" id="grid"></div></div><div class="lb" id="lb" role="dialog" aria-modal="true"><img alt=""><div class="bar"><button class="btn" id="p" aria-label="قبلی">→</button><small id="cap"></small><button class="btn" id="n" aria-label="بعدی">←</button><a class="btn on" id="dl" download>دانلود</a><button class="btn" id="x">بستن</button></div></div><script>// اسم عکس‌ها (بدون پسوند). عکس جدید داری؟ فقط اسمش رو اینجا اضافه کن.
+const PHOTOS = ["006", "008", "007", "009", "010", "011", "013", "012", "017", "015", "016", "014", "023", "018", "019", "020", "021", "022"];
+// پسوندها به ترتیب امتحان می‌شن؛ jfif قبل از jpg هست تا عکس جدید جای قدیمی رو بگیره.
+const EXT = ["jfif","jpg","jpeg","png","webp","JFIF","JPG","JPEG","PNG"], P = "../images/";
+const G = document.getElementById("grid"), L = document.getElementById("lb"), I = L.querySelector("img"), C = document.getElementById("cap"), D = document.getElementById("dl");
+const B = () => [...G.children]; let k = 0;
+PHOTOS.forEach((n) => {
+  const b = document.createElement("button"), im = new Image(); let e = 0;
+  b.className = "it"; b.setAttribute("aria-label", "باز کردن عکس"); im.alt = n; im.loading = "lazy";
+  im.onerror = () => { e++; if (e < EXT.length) im.src = P + n + "." + EXT[e]; else b.remove(); };
+  im.src = P + n + "." + EXT[0]; b.append(im); G.append(b);
+  b.onclick = () => show(B().indexOf(b));
+});
+function show(i) { const a = B(); k = (i + a.length) % a.length; const s = a[k].querySelector("img").src; I.src = s; D.href = s; C.textContent = (k + 1) + " / " + a.length; L.classList.add("on"); }
+document.getElementById("x").onclick = () => L.classList.remove("on");
+document.getElementById("n").onclick = () => show(k + 1);
+document.getElementById("p").onclick = () => show(k - 1);
+L.addEventListener("click", (e) => { if (e.target === L) L.classList.remove("on"); });
+addEventListener("keydown", (e) => { if (!L.classList.contains("on")) return; if (e.key === "Escape") L.classList.remove("on"); if (e.key === "ArrowLeft") show(k + 1); if (e.key === "ArrowRight") show(k - 1); });
+</script></body></html>

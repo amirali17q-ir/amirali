@@ -1,0 +1,18 @@
+@font-face{font-family:Vazirmatn;src:url(fonts/Vazirmatn.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:Nastaliq;src:url(fonts/IranNastaliq.ttf)}
+:root{--bg:#080a12;--panel:#0e1220;--line:#242b40;--text:#f1f3fb;--muted:#9ba5bc;--red:#ff3158;--blue:#4d9dff;--purple:#a77bff;--green:#42dfb0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Vazirmatn,Tahoma,sans-serif;background:var(--bg);color:var(--text);line-height:1.9;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(520px 400px at 90% 0,#ff315822,transparent),radial-gradient(520px 400px at 0 100%,#4d9dff1f,transparent)}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(960px,92%);margin:0 auto;padding:26px 0 80px}
+.top{margin-bottom:30px}
+.back{display:inline-block;border:1px solid var(--line);background:var(--panel);padding:6px 16px;border-radius:10px;font-size:13px;color:var(--muted)}
+.back:hover{color:var(--text);border-color:var(--red)}
+h1{font-size:clamp(26px,4vw,38px);font-weight:900;line-height:1.5}
+.sub{color:var(--muted);font-size:14px;margin:4px 0 28px;max-width:60ch}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:20px}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:8px 18px;font:inherit;cursor:pointer}
+.btn:hover{border-color:var(--red)}.btn.on{background:var(--red);border-color:var(--red)}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

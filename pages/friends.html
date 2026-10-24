@@ -1,0 +1,19 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>به یاد دوستانم | AMIR-ALI-WEB</title><link rel="stylesheet" href="../files/pages.css"><style>body{background:#060a14}body::before{background:radial-gradient(700px 500px at 50% -10%,#3b6fb633,transparent),radial-gradient(600px 500px at 0 100%,#1c2f5a40,transparent)}
+#snow{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.hero{text-align:center;margin:6px 0 34px}.hero h1{color:#e9f2ff;letter-spacing:-.5px}
+.hero .t{font-size:20px;color:#9fc0f0;margin-top:6px}.hero .d{font-size:13px;color:#6f86ad;margin-top:10px}
+.back:hover{border-color:#8fb4e8}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.f{padding:18px 10px;text-align:center;background:#0b1424cc;border-color:#1e2d4a;backdrop-filter:blur(4px);transition:.3s}
+.f:hover{border-color:#8fb4e8;box-shadow:0 0 24px #5f95e630;transform:translateY(-2px)}
+.f i{font-style:normal;color:#8fb4e8;font-size:16px;opacity:.8}.f h2{font-size:17px;font-weight:700;color:#e9f2ff;margin-top:2px}
+.f p{color:#6f86ad;font-size:12px}.f small{color:#6f86ad;font-size:11px;direction:ltr;display:block}
+.empty{text-align:center;color:#6f86ad;padding:40px 10px}
+.add{display:none;gap:8px;flex-wrap:wrap;margin-bottom:22px}.add.show{display:flex}
+.add input{flex:1;min-width:140px;font:inherit;background:#0b1424;color:var(--text);border:1px solid #1e2d4a;border-radius:10px;padding:8px}
+.x{display:none;margin-top:8px;font-size:12px}.edit .x{display:inline-block}</style></head><body><canvas id="snow" aria-hidden="true"></canvas><div class="wrap"><div class="top"><a class="back" href="../index.html">← خانه</a></div>
+<div class="hero"><h1>به یاد دوستانم</h1><p class="t">روزگارانی که گذر کردیم</p><p class="d">از ۲ دی ۱۴۰۲؛ زمستونی که هنوز توی یادمونه</p></div>
+<form class="add card" id="form"><input id="n" placeholder="اسم" required><input id="nt" placeholder="یه جمله (اختیاری)"><input id="y" placeholder="سال (اختیاری)"><button class="btn on">افزودن</button></form>
+<div class="grid" id="grid"></div></div><script src="../files/friends-data.js"></script><script src="../files/friends.js"></script><script>const c=document.getElementById("snow"),x=c.getContext("2d");if(!matchMedia("(prefers-reduced-motion:reduce)").matches){let w,h,F=[];const R=()=>{w=c.width=innerWidth;h=c.height=innerHeight};R();addEventListener("resize",R);
+for(let i=0;i<70;i++)F.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2+.6,s:Math.random()*.6+.25,d:Math.random()*Math.PI*2});
+(function a(){x.clearRect(0,0,w,h);x.fillStyle="#cfe2ff";F.forEach(f=>{f.y+=f.s;f.d+=.01;f.x+=Math.sin(f.d)*.4;if(f.y>h){f.y=-5;f.x=Math.random()*w}x.globalAlpha=.25+f.r/4;x.beginPath();x.arc(f.x,f.y,f.r,0,7);x.fill()});requestAnimationFrame(a)})()}</script></body></html>

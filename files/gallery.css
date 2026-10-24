@@ -1,0 +1,41 @@
+@charset "utf-8";
+.master{
+background: url("../images/001.jpg");
+background-repeat: no-repeat;
+background-size: 1347px 770px;
+width: 1347px;
+height: 770px;
+margin-right: auto;
+margin-left: auto;
+position: relative;
+
+}
+.ASHOB1{
+border: 2px solid #2F2F2F;
+width: 200px;
+float: left;
+margin: 10px;
+border-radius: 8px;
+transition: all 0.5s;
+}
+.ASHOB1:hover{
+border-radius: 25px;
+}
+.ASHOB1 img{
+width: 100%;
+height: 160px;
+border-radius: 8px 8px 0px 0px;
+transition: all 0.5s;
+}
+.ASHOB1 img:hover{
+width: 100%;
+border-radius: 25px 25px 0px 0px;
+}
+.ASHOB2{
+color: aliceblue;
+text-align: center
+}
+.ASHOB3{
+text-align: center;
+color: aliceblue
+}
